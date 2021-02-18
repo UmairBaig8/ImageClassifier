@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>
+			Image classifier using TenserFlow 2.0
+		</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Image Classifier using TensorFlow</h1>
+		<div class="content">
+			<div class="form">
+				<input type="text" id="image_url" placeholder="Image url">
+			</div>
+			<p id="prediction"></p>
+			<img id="img" crossorigin="anonymous" />
+		</div>
+
+		<!-- Load TensorFlow.js. This is required to use MobileNet. -->
+		<script type="text/javascript" rc="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"></script>
+		<!-- Load the MobileNet model. -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"></script>
+		<script type="text/javascript" src="js/predict.js"></script>
+	</body>
+</html>
